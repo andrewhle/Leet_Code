@@ -20,8 +20,9 @@ public:
 
 		//if 1 node;
 		if (curr == nullptr) {
+			return head->next; // nullptr
 		}
-		return head->next; // nullptr
+	
 
 		while (curr->next != nullptr) {
 			prev = prev->next;
